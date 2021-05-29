@@ -42,10 +42,12 @@ const bookReducer = (state = primaryState, action) => {
       if (!isAlreadyFinished) {
         const newState = {
           ...state,
-          readingList: state.readingList.filter((b) => b.id !== action.payload),
+          readingList: state.readingList.filter(
+            (b) => b._id !== action.payload
+          ),
           finishedList: [
             ...state.finishedList,
-            state.discoverList.find((b) => b._id === action.payload),
+            state.allBooks.find((b) => b._id === action.payload),
           ],
         };
 

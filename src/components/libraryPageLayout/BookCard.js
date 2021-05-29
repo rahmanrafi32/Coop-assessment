@@ -1,10 +1,17 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addToReadingList } from "../../redux/actions/bookActions";
+import { useLocation } from "react-router";
+import {
+  addToReadingList,
+  markAsFinished,
+  deleteFromReadingList,
+  removeFromFinishedList,
+} from "../../redux/actions/bookActions";
 
 function BookCard({ book }) {
   const { _id, author_name, book_description, book_image, book_name } = book;
   const dispatch = useDispatch();
+  let location = useLocation();
   return (
     <div class="col ">
       <div class="card h-100 ">
@@ -20,12 +27,37 @@ function BookCard({ book }) {
           <p class="card-text">{book_description}</p>
         </div>
         <div class="card-footer d-flex align-items-center">
-          <small class="text-muted">Add to reading list</small>{" "}
-          <i
-            class="bi bi-node-plus-fill fs-3 ms-5 text-success"
-            style={{ cursor: "pointer" }}
-            onClick={() => dispatch(addToReadingList(book))}
-          ></i>
+          {location.pathname === "/library/all-books" && (
+            <>
+              {" "}
+              <small class="text-muted">Add to reading list</small>{" "}
+              <i
+                class="bi bi-node-plus-fill fs-3 ms-5 text-success"
+                style={{ cursor: "pointer" }}
+                onClick={() => dispatch(addToReadingList(book))}
+              ></i>{" "}
+            </>
+          )}
+          {location.pathname === "/library/reading-list" && (
+            <>
+              {" "}
+              <i
+                class="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
+                style={{ cursor: "pointer" }}
+                onClick={() => dispatch(deleteFromReadingList(_id))}
+              >
+                Remove
+              </i>{" "}
+              <i
+                class="bi bi-check-circle-fill text-primary ms-4 fs-5"
+                style={{ cursor: "pointer" }}
+                onClick={() => dispatch(markAsFinished(_id))}
+              >
+                {" "}
+                Finished
+              </i>
+            </>
+          )}
         </div>
       </div>
     </div>
