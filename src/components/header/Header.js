@@ -48,8 +48,12 @@ const Header = () => {
             <Link to="/teacher-dashboard" class="nav-text text-decoration-none">
               Teacher dash{" "}
             </Link>{" "}
-          </div>{" "}
-          <div class="mx-4 nav-text">Student dash</div>{" "}
+          </div>
+          <div class="mx-4 ">
+            <Link to="/student-dashboard" class="nav-text text-decoration-none">
+              Student dash
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
