@@ -58,6 +58,15 @@ function BookCard({ book }) {
               </i>
             </>
           )}
+          {location.pathname === "/library/completed-list" && (
+            <i
+              class="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
+              style={{ cursor: "pointer" }}
+              onClick={() => dispatch(removeFromFinishedList(_id))}
+            >
+              Remove from the list{" "}
+            </i>
+          )}
         </div>
       </div>
     </div>

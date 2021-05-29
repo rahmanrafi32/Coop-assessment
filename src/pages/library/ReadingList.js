@@ -9,9 +9,13 @@ function ReadingList() {
     <PageLayout>
       {" "}
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        {readingList.map((book) => (
-          <BookCard key={book._id} book={book} />
-        ))}
+        {readingList.length ? (
+          readingList.map((book) => <BookCard key={book._id} book={book} />)
+        ) : (
+          <p class="p-5 w-100 text-center">
+            There is no book in your reading list{" "}
+          </p>
+        )}
       </div>
     </PageLayout>
   );
