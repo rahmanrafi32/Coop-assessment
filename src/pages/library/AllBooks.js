@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageLayout from "../../components/libraryPageLayout/PageLayout";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import BookCard from "../../components/libraryPageLayout/BookCard";
+import { loadBooks } from "../../redux/actions/bookActions";
 function AllBooks() {
+  const dispatch = useDispatch();
+
+  useEffect(() => dispatch(loadBooks()), [dispatch]);
+
   const allBooks = useSelector((state) => state.books.allBooks);
   console.log(allBooks);
   return (

@@ -1,13 +1,17 @@
-import allBooks from "../../fakeData/AllBooks.json";
+//import allBooks from "../../fakeData/AllBooks.json";
 
 const primaryState = {
   readingList: [],
-  allBooks: allBooks,
+  allBooks: [],
   finishedList: [],
 };
 
 const bookReducer = (state = primaryState, action) => {
   switch (action.type) {
+    case "LOAD_ALL_BOOKS": {
+      const newState = { ...state, allBooks: action.payload };
+      return newState;
+    }
     case "ADD_TO_READING_LIST": {
       const isAlreadySelected = state.readingList.find(
         (b) => b._id === action.payload._id

@@ -1,25 +1,11 @@
 import React from "react";
-
-const data = [
-  {
-    courseName: "Mathematics (MTH101)",
-    time: new Date().toLocaleDateString(),
-  },
-  {
-    courseName: "Mathematics (MTH101)",
-    time: new Date().toLocaleDateString(),
-  },
-  {
-    courseName: "Mathematics (MTH101)",
-    time: new Date().toLocaleDateString(),
-  },
-  {
-    courseName: "Mathematics (MTH101)",
-    time: new Date().toLocaleDateString(),
-  },
-];
+import { useSelector } from "react-redux";
 
 export default function ClassSchedule() {
+  const data = useSelector(
+    (state) => state?.studentDashboardData?.classSchedule
+  );
+
   return (
     <div class="mt-4">
       <ul class="list-group">
@@ -27,8 +13,8 @@ export default function ClassSchedule() {
           Today's class schedule
         </li>
         <li class="list-group-item">A second item</li>
-        {data.map((data) => (
-          <li class="list-group-item">
+        {data.map((data, i) => (
+          <li class="list-group-item" key={i}>
             {data.courseName}
 
             <br />

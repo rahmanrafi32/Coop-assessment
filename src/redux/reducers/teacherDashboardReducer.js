@@ -21,8 +21,8 @@ const primaryState = {
   ],
 };
 
-const teacherDashboardChartReducer = (state = primaryState, action) => {
+const teacherDashboardReducer = (state = primaryState, action) => {
   return state;
 };
 
-export default teacherDashboardChartReducer;
+export default teacherDashboardReducer;

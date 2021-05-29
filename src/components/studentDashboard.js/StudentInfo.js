@@ -1,24 +1,24 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function StudentInfo() {
+  const { id, name, photo, semester, address } = useSelector(
+    (state) => state.studentDashboardData.info
+  );
   return (
     <div class="mt-4">
       <div class="card mb-3" style={{ maxWidth: "540px" }}>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-around">
           <div>
-            <img
-              class="w-25 rounded-circle h-25"
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-              alt="..."
-            />
+            <img class="w-25 rounded-circle h-25 p-3" src={photo} alt="..." />
           </div>
-          <p class="p-3">Name: Kaira </p>
+          <p class="p-3">Name: {name} </p>
         </div>
         <hr />
         <div class="m-2">
-          <p>ID : 1234566778</p>
-          <p>Semester: 3rd </p>
-          <p>Address: Lorem ipsum dolor sit amet.</p>
+          <p>ID : {id}</p>
+          <p>Semester: {semester} </p>
+          <p>Address: {address}</p>
         </div>
       </div>
     </div>

@@ -1,3 +1,17 @@
+export const loadBooks = () => {
+  return (dispatch) => {
+    fetch(`https://enigmatic-mesa-35453.herokuapp.com/getAllProducts`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("dataaaaaaaaaaaaaaaa", data);
+        dispatch({
+          type: "LOAD_ALL_BOOKS",
+          payload: data,
+        });
+      });
+  };
+};
+
 export const addToReadingList = (payload) => {
   return { type: "ADD_TO_READING_LIST", payload };
 };
