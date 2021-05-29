@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import AdminPage from './pages/AdminPage/AdminPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       ok
-       <p></p>
-      </header>
+    <div >
+      <AdminPage></AdminPage>
     </div>
   );
 }
