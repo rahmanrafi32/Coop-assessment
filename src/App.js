@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import TeacherDashboard from "./pages/TeacherDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 
+import AllBooks from "./pages/library/AllBooks";
+import ReadingList from "./pages/library/ReadingList";
+import CompletedList from "./pages/library/CompletedList";
+
 function App() {
   return (
     <div className="App">
@@ -12,6 +16,10 @@ function App() {
         <Switch>
           <Route path="/teacher-dashboard" component={TeacherDashboard} />
           <Route path="/student-dashboard" component={StudentDashboard} />
+
+          <Route path="/library/all-books" component={AllBooks} />
+          <Route path="/library/reading-list" component={ReadingList} />
+          <Route path="/library/completed-list" component={CompletedList} />
         </Switch>
       </Router>
     </div>

@@ -27,6 +27,15 @@ const Header = () => {
               </a>
             </li>
             <li class="nav-item">
+              <Link
+                class="nav-link nav-text"
+                aria-current="page"
+                to="/library/all-books"
+              >
+                Library
+              </Link>
+            </li>
+            <li class="nav-item">
               <a class="nav-link nav-text" href="#">
                 About
               </a>

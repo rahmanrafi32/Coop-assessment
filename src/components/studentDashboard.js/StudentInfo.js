@@ -12,7 +12,7 @@ function StudentInfo() {
               alt="..."
             />
           </div>
-          <p>Name: Oshan </p>
+          <p class="p-3">Name: Kaira </p>
         </div>
         <hr />
         <div class="m-2">
