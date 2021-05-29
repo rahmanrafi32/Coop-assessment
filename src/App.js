@@ -8,12 +8,16 @@ import AllBooks from "./pages/library/AllBooks";
 import ReadingList from "./pages/library/ReadingList";
 import CompletedList from "./pages/library/CompletedList";
 
+import Footer from "./components/Footer/Footer";
+import MainHome from "./components/Home/MainHome/MainHome";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
+          <Route exact path="/" component={MainHome} />
           <Route path="/teacher-dashboard" component={TeacherDashboard} />
           <Route path="/student-dashboard" component={StudentDashboard} />
           <Route path="/admin-dashboard" component={AdminPage} />
@@ -21,6 +25,7 @@ function App() {
           <Route path="/library/reading-list" component={ReadingList} />
           <Route path="/library/completed-list" component={CompletedList} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,0 +1,30 @@
+.header-wrapper {
+  height: 90vh;
+}
+.principal-name {
+  color: #81878c;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.know-more-btn {
+  border-radius: 10px;
+  color: #27ae60;
+  background: transparent;
+  border: 2px solid #27ae60;
+  display: inline-block;
+  padding: 15px 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.principal-intro h3 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #27ae60;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.principal-intro h6 {
+  color: #81878c;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to="/">
           Navbar
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,9 +22,9 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link nav-text" aria-current="page" href="#">
+              <Link class="nav-link nav-text" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
               <Link
@@ -36,9 +36,9 @@ const Header = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-text" href="#">
+              <Link class="nav-link nav-text" href="#">
                 About
-              </a>
+              </Link>
             </li>
           </ul>
           <form class="d-flex m-auto">

@@ -1,0 +1,8 @@
+body {
+  position: relative;
+  background-image: url("https://img.freepik.com/free-photo/book-with-green-board-background_1150-3837.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
