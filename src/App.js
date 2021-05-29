@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import TeacherDashboard from "./pages/TeacherDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
-
+import AdminPage from "./pages/AdminPage/AdminPage";
 import AllBooks from "./pages/library/AllBooks";
 import ReadingList from "./pages/library/ReadingList";
 import CompletedList from "./pages/library/CompletedList";
@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route path="/teacher-dashboard" component={TeacherDashboard} />
           <Route path="/student-dashboard" component={StudentDashboard} />
-
+          <Route path="/admin-dashboard" component={AdminPage} />
           <Route path="/library/all-books" component={AllBooks} />
           <Route path="/library/reading-list" component={ReadingList} />
           <Route path="/library/completed-list" component={CompletedList} />

@@ -52,7 +52,11 @@ const Header = () => {
               Search
             </button>
           </form>
-          <div class="mx-4 nav-text">Admin </div>
+          <div class="mx-4 nav-text">
+            <Link to="/admin-dashboard" class="nav-text text-decoration-none">
+              Admin
+            </Link>
+          </div>
           <div class="mx-4 ">
             <Link to="/teacher-dashboard" class="nav-text text-decoration-none">
               Teacher dash{" "}
