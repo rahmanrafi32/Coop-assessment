@@ -1,20 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function ClassRoutine() {
-  const classSchedule = [
-    {
-      courseName: "Mathematics (MTH101)",
-      roomNo: 601,
-    },
-    {
-      courseName: "Physics (PHY101)",
-      roomNo: 704,
-    },
-    {
-      courseName: " (PHY101)",
-      roomNo: 706,
-    },
-  ];
+  const classSchedule = useSelector(
+    (state) => state.teacherDashboardData.classSchedule
+  );
 
   return (
     <div class="m-4">

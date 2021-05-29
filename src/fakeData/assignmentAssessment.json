@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Semester 1",
+    "pv": 70
+  },
+  {
+    "name": "Semester 2",
+    "pv": 50
+  },
+  {
+    "name": "Semester 3",
+    "pv": 90
+  },
+  {
+    "name": "Semester 4",
+    "pv": 60
+  },
+  {
+    "name": "Semester 5",
+    "pv": 70
+  },
+  {
+    "name": "Semester 6",
+    "pv": 80
+  },
+  {
+    "name": "Semester 7",
+    "pv": 70
+  },
+  {
+    "name": "Semester 8",
+    "pv": 60
+  }
+]

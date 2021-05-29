@@ -1,40 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Announcement() {
-  const academicAnouncement = [
-    {
-      title: "Guest lecture on fine arts",
-      time: new Date().toLocaleDateString(),
-      subject: `Second heading Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Vel est sequi error doloribus delectus quidem suscipit excepturi
-          iste ea repudiandae nesciunt et nulla in, alias nobis ipsum optio aut
-          sit aliquam maxime dicta odit quaerat quia officiis. `,
-    },
-    {
-      title: "Guest lecture on physics.",
-      time: new Date().toLocaleDateString(),
-      subject: `Second heading Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Vel est sequi error doloribus delectus quidem suscipit excepturi
-          iste ea repudiandae nesciunt et nulla in, alias nobis ipsum optio aut
-          sit aliquam maxime dicta odit quaerat quia officiis. `,
-    },
-    {
-      title: "Guest lecture on physics.",
-      time: new Date().toLocaleDateString(),
-      subject: `Second heading Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Vel est sequi error doloribus delectus quidem suscipit excepturi
-          iste ea repudiandae nesciunt et nulla in, alias nobis ipsum optio aut
-          sit aliquam maxime dicta odit quaerat quia officiis. `,
-    },
-    {
-      title: "Guest lecture on physics.",
-      time: new Date().toLocaleDateString(),
-      subject: `Second heading Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Vel est sequi error doloribus delectus quidem suscipit excepturi
-          iste ea repudiandae nesciunt et nulla in, alias nobis ipsum optio aut
-          sit aliquam maxime dicta odit quaerat quia officiis. `,
-    },
-  ];
+  const academicAnnouncement = useSelector(
+    (state) => state.teacherDashboardData.academicAnnouncement
+  );
 
   return (
     <div style={{ height: "400px", overflow: "scroll", margin: "10px" }}>
@@ -43,7 +13,7 @@ function Announcement() {
       </p>
 
       <div>
-        {academicAnouncement.map((data, i) => (
+        {academicAnnouncement.map((data, i) => (
           <Card data={data} key={i} />
         ))}
       </div>

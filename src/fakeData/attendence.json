@@ -1,0 +1,42 @@
+[
+  {
+    "name": "1st",
+    "present": 80,
+    "absent": 24
+  },
+  {
+    "name": "2nd",
+    "present": 60,
+    "absent": 30
+  },
+  {
+    "name": "3rd",
+    "present": 68,
+    "absent": 20
+  },
+  {
+    "name": "4th",
+    "present": 50,
+    "absent": 40
+  },
+  {
+    "name": "5th",
+    "present": 70,
+    "absent": 30
+  },
+  {
+    "name": "6th",
+    "present": 60,
+    "absent": 40
+  },
+  {
+    "name": "7th",
+    "present": 90,
+    "absent": 10
+  },
+  {
+    "name": "8th",
+    "present": 70,
+    "absent": 50
+  }
+]
