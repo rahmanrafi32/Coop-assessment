@@ -6,7 +6,7 @@ function StudentInfo() {
     (state) => state.studentDashboardData.info
   );
   return (
-    <div className="mt-4">
+    <div className="mt-4 mx-3">
       <div className="card mb-3" style={{ maxWidth: "540px" }}>
         <div className="d-flex align-items-center justify-content-around">
           <div>

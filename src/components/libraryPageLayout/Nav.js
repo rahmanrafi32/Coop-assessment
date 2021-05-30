@@ -9,7 +9,7 @@ export default function Nav() {
     <div className=" mt-4 sticky-top m-auto" style={{ width: "fit-content" }}>
       <ul
         className="nav justify-content-center p-2 "
-        style={{ backgroundColor: "#fdddff" }}
+        style={{ backgroundColor: "#bbfeff" }}
       >
         <li className="nav-item">
           <Link

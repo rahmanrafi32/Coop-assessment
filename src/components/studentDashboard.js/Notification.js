@@ -3,7 +3,7 @@ import React from "react";
 function Notification() {
   return (
     <div>
-      <div className="mt-4 card" style={{ maxWidth: "540px" }}>
+      <div className="mt-4 card mx-3" style={{ maxWidth: "540px" }}>
         <div className=" mb-3 p-3">
           <h5 className="card-title">Submit your assignment</h5>
           <p>

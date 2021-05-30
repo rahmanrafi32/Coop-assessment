@@ -7,7 +7,7 @@ export default function ClassSchedule() {
   );
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 mx-3">
       <ul className="list-group">
         <li className="list-group-item active" aria-current="true">
           Today's class schedule
