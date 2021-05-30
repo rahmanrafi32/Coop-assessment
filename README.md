@@ -1,6 +1,6 @@
 
 ### University Management
-This is a university faculty management webapp. Students and teachers can login to this app with their email and can see their assensials. 
+This is a university faculty management webapp. Students and teachers can login to this app with their email and can see their staffs. 
 
 ## Top Features 
 
