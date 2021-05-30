@@ -7,13 +7,32 @@ import AdminPage from "./pages/AdminPage/AdminPage";
 import AllBooks from "./pages/library/AllBooks";
 import ReadingList from "./pages/library/ReadingList";
 import CompletedList from "./pages/library/CompletedList";
-
+import firebase from "firebase/app";
+import "firebase/auth";
 import Footer from "./components/Footer/Footer";
 import MainHome from "./components/Home/MainHome/MainHome";
 import Login from "./pages/Login/Login";
 import Signin from "./pages/Login/Signin";
 import PrivateRoute from "./privateRoute/PrivateRoute";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setUser } from "./redux/actions/userLogin";
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        let userDetails = {
+          name: user.displayName,
+          email: user.email,
+          photo: user.photoURL,
+        };
+        dispatch(setUser(userDetails));
+      }
+    });
+  }, [dispatch]);
+
   return (
     <div className="App">
       <Router>

@@ -14,8 +14,8 @@ function AttendenceChart() {
   const data = useSelector((state) => state.teacherDashboardData.attendence);
 
   return (
-    <div class="table-responsive">
-      <p class="text-center m-3">Today's student attendence.</p>
+    <div className="table-responsive">
+      <p className="text-center m-3">Today's student attendence.</p>
       <BarChart width={800} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />

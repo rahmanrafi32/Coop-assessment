@@ -7,14 +7,14 @@ function ClassRoutine() {
   );
 
   return (
-    <div class="m-4">
-      <ul class="list-group">
-        <li class="list-group-item active" aria-current="true">
-          <i class="bi bi-calendar"></i> TODAY'S SCHEDULE{" "}
+    <div className="m-4">
+      <ul className="list-group">
+        <li className="list-group-item active" aria-current="true">
+          <i className="bi bi-calendar"></i> TODAY'S SCHEDULE{" "}
         </li>
 
         {classSchedule.map((s, i) => (
-          <li class="list-group-item" key={s.courseName + i}>
+          <li className="list-group-item" key={s.courseName + i}>
             {s.courseName} <br />
             Room No - {s.roomNo}{" "}
           </li>

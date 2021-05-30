@@ -14,26 +14,26 @@ function BookCard({ book }) {
   let location = useLocation();
   const userData = useSelector((state) => state.userData.userInfo);
   return (
-    <div class="col mb-3">
-      <div class="card h-100 ">
+    <div className="col mb-3">
+      <div className="card h-100 ">
         <img
           src={book_image}
-          class="card-img-top m-auto p-3"
+          className="card-img-top m-auto p-3"
           style={{ height: "300px", width: "200px" }}
           alt="..."
         />
-        <div class="card-body">
-          <h5 class="card-title">{book_name}</h5>
+        <div className="card-body">
+          <h5 className="card-title">{book_name}</h5>
           <h6>Author : {author_name}</h6>
-          <p class="card-text">{book_description}</p>
+          <p className="card-text">{book_description}</p>
         </div>
-        <div class="card-footer d-flex align-items-center">
+        <div className="card-footer d-flex align-items-center">
           {location.pathname === "/library/all-books" && (
             <>
               {" "}
-              <small class="text-muted">Add to reading list</small>{" "}
+              <small className="text-muted">Add to reading list</small>{" "}
               <i
-                class="bi bi-node-plus-fill fs-3 ms-5 text-success"
+                className="bi bi-node-plus-fill fs-3 ms-5 text-success"
                 style={{ cursor: "pointer" }}
                 onClick={() =>
                   dispatch(addToReadingList({ ...book, reader: userData }))
@@ -45,14 +45,14 @@ function BookCard({ book }) {
             <>
               {" "}
               <i
-                class="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
+                className="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
                 style={{ cursor: "pointer" }}
                 onClick={() => dispatch(deleteFromReadingList(_id))}
               >
                 Remove
               </i>{" "}
               <i
-                class="bi bi-check-circle-fill text-primary ms-4 fs-5"
+                className="bi bi-check-circle-fill text-primary ms-4 fs-5"
                 style={{ cursor: "pointer" }}
                 onClick={() =>
                   dispatch(markAsFinished({ _id, reader: userData }))
@@ -65,7 +65,7 @@ function BookCard({ book }) {
           )}
           {location.pathname === "/library/completed-list" && (
             <i
-              class="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
+              className="bi bi-dash-circle-fill fs-5 ms-5 text-warning"
               style={{ cursor: "pointer" }}
               onClick={() => dispatch(removeFromFinishedList(_id))}
             >

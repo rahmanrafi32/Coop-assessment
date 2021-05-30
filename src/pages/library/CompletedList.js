@@ -8,11 +8,11 @@ function CompletedList() {
   return (
     <PageLayout>
       {" "}
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
+      <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
         {finishedList.length ? (
           finishedList.map((book) => <BookCard key={book._id} book={book} />)
         ) : (
-          <p class="p-5 w-100 text-center">
+          <p className="p-5 w-100 text-center">
             There is no book in your finished list{" "}
           </p>
         )}

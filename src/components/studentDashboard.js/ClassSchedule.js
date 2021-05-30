@@ -7,14 +7,14 @@ export default function ClassSchedule() {
   );
 
   return (
-    <div class="mt-4">
-      <ul class="list-group">
-        <li class="list-group-item active" aria-current="true">
+    <div className="mt-4">
+      <ul className="list-group">
+        <li className="list-group-item active" aria-current="true">
           Today's class schedule
         </li>
 
         {data.map((data, i) => (
-          <li class="list-group-item" key={i}>
+          <li className="list-group-item" key={i}>
             {data.courseName}
 
             <br />

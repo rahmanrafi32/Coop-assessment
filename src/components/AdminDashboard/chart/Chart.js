@@ -71,12 +71,15 @@ const Chart = () => {
       </div>
 
       <div className="col-md-4 d-flex justify-content-center mb-4">
-        <ul class="list-group" style={{ maxWidth: "20rem", border: "none" }}>
-          <li class="list-group-item py-3 text-secondary fw-bold ">
+        <ul
+          className="list-group"
+          style={{ maxWidth: "20rem", border: "none" }}
+        >
+          <li className="list-group-item py-3 text-secondary fw-bold ">
             {" "}
             <FontAwesomeIcon icon={faCalendarAlt} /> TODAY'S TASK
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">10 am</small>
@@ -90,7 +93,7 @@ const Chart = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">11 am</small>
@@ -104,7 +107,7 @@ const Chart = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">12 pm</small>
@@ -118,7 +121,7 @@ const Chart = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">01 pm</small>
@@ -132,7 +135,7 @@ const Chart = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">02 pm</small>

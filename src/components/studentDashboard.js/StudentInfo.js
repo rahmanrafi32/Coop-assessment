@@ -6,16 +6,20 @@ function StudentInfo() {
     (state) => state.studentDashboardData.info
   );
   return (
-    <div class="mt-4">
-      <div class="card mb-3" style={{ maxWidth: "540px" }}>
-        <div class="d-flex align-items-center justify-content-around">
+    <div className="mt-4">
+      <div className="card mb-3" style={{ maxWidth: "540px" }}>
+        <div className="d-flex align-items-center justify-content-around">
           <div>
-            <img class="w-25 rounded-circle h-25 p-3" src={photo} alt="..." />
+            <img
+              className="w-25 rounded-circle h-25 p-3"
+              src={photo}
+              alt="..."
+            />
           </div>
-          <p class="p-3">Name: {name} </p>
+          <p className="p-3">Name: {name} </p>
         </div>
         <hr />
-        <div class="m-2">
+        <div className="m-2">
           <p>ID : {id}</p>
           <p>Semester: {semester} </p>
           <p>Address: {address}</p>

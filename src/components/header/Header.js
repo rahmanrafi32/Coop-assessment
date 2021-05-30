@@ -12,15 +12,14 @@ const Header = () => {
     dispatch(removeUser());
   };
 
-  console.log("sagar", userData);
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container-fluid">
-        <Link class="navbar-brand" to="/">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
           Navbar
         </Link>
         <button
-          class="navbar-toggler bg-info"
+          className="navbar-toggler bg-info"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -28,48 +27,52 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link nav-text p-2" aria-current="page" to="/">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link
+                className="nav-link nav-text p-2"
+                aria-current="page"
+                to="/"
+              >
                 Home
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link nav-text p-2"
+                className="nav-link nav-text p-2"
                 aria-current="page"
                 to="/library/all-books"
               >
                 Library
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link nav-text p-2" to="/">
+            <li className="nav-item">
+              <Link className="nav-link nav-text p-2" to="/">
                 About
               </Link>
             </li>
           </ul>
-          <form class="d-flex m-auto">
+          <form className="d-flex m-auto">
             <input
-              class="form-control me-2"
+              className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-info" type="submit">
+            <button className="btn btn-outline-info" type="submit">
               Search
             </button>
           </form>
-          <div class="mx-4">
+          <div className="mx-4">
             {/*  */}
 
-            <ul style={{ listStyle: "none" }} class="nav-text">
-              <li class="dropdown">
+            <ul style={{ listStyle: "none" }} className="nav-text">
+              <li className="dropdown">
                 <p
-                  class="mt-1  dropdown-toggle"
+                  className="mt-1  dropdown-toggle"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -77,28 +80,28 @@ const Header = () => {
                 >
                   Dashboard
                 </p>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="mt-3">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li className="mt-3">
                     <Link
                       to="/admin-dashboard"
-                      class="nav-text text-decoration-none"
+                      className="nav-text text-decoration-none"
                     >
                       Admin
                     </Link>
                   </li>
-                  <li class="mt-3">
+                  <li className="mt-3">
                     <Link
                       to="/teacher-dashboard"
-                      class="nav-text text-decoration-none "
+                      className="nav-text text-decoration-none "
                     >
                       Teacher dash
                     </Link>{" "}
                   </li>
 
-                  <li class="mt-3">
+                  <li className="mt-3">
                     <Link
                       to="/student-dashboard"
-                      class="nav-text text-decoration-none "
+                      className="nav-text text-decoration-none "
                     >
                       Student dash
                     </Link>
@@ -120,7 +123,7 @@ const Header = () => {
               {userData?.name || userData?.email}
             </li>
           )}
-          <div class="mx-4 nav-text">
+          <div className="mx-4 nav-text">
             {userData.name || userData.email ? (
               <p
                 className=""

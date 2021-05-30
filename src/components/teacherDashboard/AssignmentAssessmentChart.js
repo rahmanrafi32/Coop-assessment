@@ -15,8 +15,8 @@ function AssignmentAssessmentChart() {
     (state) => state.teacherDashboardData.assignmentAssessment
   );
   return (
-    <div style={{ width: "100%" }} class="mt-5">
-      <h4 class="text-center mb-5 text-primary">
+    <div style={{ width: "100%" }} className="mt-5">
+      <h4 className="text-center mb-5 text-primary">
         Assignment completion trends...
       </h4>
 

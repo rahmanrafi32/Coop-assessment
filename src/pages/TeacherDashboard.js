@@ -9,7 +9,7 @@ export default function TeacherDashboard() {
   return (
     <div>
       <InfoCards />
-      <div class="d-flex flex-column flex-md-row justify-content-around">
+      <div className="d-flex flex-column flex-md-row justify-content-around">
         <AttendenceChart />
         <ClassRoutine />
       </div>
