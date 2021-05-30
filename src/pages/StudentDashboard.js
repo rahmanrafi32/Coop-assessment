@@ -8,6 +8,7 @@ const StudentDashboard = () => {
            
             <StudentCard></StudentCard>
             <StudentSMS></StudentSMS>
+            
         </div>
     );
 };
