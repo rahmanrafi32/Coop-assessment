@@ -50,6 +50,20 @@ const StudentSMS = () => {
           <li class="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
+              <small className="p-2">11 am</small>
+            </p>
+            <p>
+              {" "}
+              English (E101) <br />
+              <small className="text-secondary">
+                {" "}
+                <FontAwesomeIcon icon={faMapMarkerAlt} /> ROOM NO - 601
+              </small>{" "}
+            </p>
+          </li>
+          <li class="list-group-item py-3 d-flex">
+            <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
+              {" "}
               <small className="p-2">12 pm</small>
             </p>
             <p>
