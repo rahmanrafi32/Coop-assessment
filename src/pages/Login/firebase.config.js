@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCRx_Q6ttjS1LPVrcio1Vew7UJb8J5_dyA",
-  authDomain: "book-voice-13bbb.firebaseapp.com",
-  projectId: "book-voice-13bbb",
-  storageBucket: "book-voice-13bbb.appspot.com",
-  messagingSenderId: "844965693241",
-  appId: "1:844965693241:web:ef9eed8b8629a09dd80ae8",
+  apiKey: "AIzaSyDOfrXr06zhF5-GPkZeSMqznphHpJiNsCE",
+  authDomain: "university-management-8232.firebaseapp.com",
+  projectId: "university-management-8232",
+  storageBucket: "university-management-8232.appspot.com",
+  messagingSenderId: "551705644722",
+  appId: "1:551705644722:web:226a99bf97ed527b1b03ab"
 };
 
 export default firebaseConfig;
