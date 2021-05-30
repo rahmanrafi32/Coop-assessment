@@ -1,20 +1,20 @@
-import Header from "./components/header/Header";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import TeacherDashboard from "./pages/TeacherDashboard";
-import StudentDashboard from "./pages/StudentDashboard";
-import AdminPage from "./pages/AdminPage/AdminPage";
-import AllBooks from "./pages/library/AllBooks";
-import ReadingList from "./pages/library/ReadingList";
-import CompletedList from "./pages/library/CompletedList";
 import firebase from "firebase/app";
 import "firebase/auth";
-import Footer from "./components/Footer/Footer";
-import MainHome from "./components/Home/MainHome/MainHome";
-import Login from "./pages/Login/Login";
-import Signin from "./pages/Login/Signin";
-import PrivateRoute from "./privateRoute/PrivateRoute";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/header/Header";
+import MainHome from "./components/Home/MainHome/MainHome";
+import AdminPage from "./pages/AdminPage/AdminPage";
+import AllBooks from "./pages/library/AllBooks";
+import CompletedList from "./pages/library/CompletedList";
+import ReadingList from "./pages/library/ReadingList";
+import Login from "./pages/Login/Login";
+import Signin from "./pages/Login/Signin";
+import StudentDashboard from "./pages/StudentDashboard";
+import TeacherDashboard from "./pages/TeacherDashboard";
+import PrivateRoute from "./privateRoute/PrivateRoute";
 import { setUser } from "./redux/actions/userLogin";
 function App() {
   const dispatch = useDispatch();
@@ -63,7 +63,6 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/signin" component={Signin} />
         </Switch>
-
         <Footer />
       </Router>
     </div>
