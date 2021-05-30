@@ -69,8 +69,11 @@ const Header = () => {
           <div className="mx-4">
             {/*  */}
 
-            <ul style={{ listStyle: "none" }} className="nav-text">
-              <li className="dropdown">
+            <ul
+              style={{ listStyle: "none", zIndex: 1000 }}
+              className="nav-text"
+            >
+              <li className="dropdown" style={{ zIndex: 100 }}>
                 <p
                   className="mt-1  dropdown-toggle"
                   id="navbarDropdown"
