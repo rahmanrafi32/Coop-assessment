@@ -21,8 +21,8 @@ const ApplyNow = () => {
               the readable content of a page when looking at its layout.
             </p>
             <div className="input-wrapper">
-              <input type="text" placeholder="e.g. email@pathshala.com" />
-              <a href="#">SUBMIT</a>
+              <input className='mb-2' type="text" placeholder="e.g. email@pathshala.com" />
+              <button className='input-button'>SUBMIT</button>
             </div>
           </div>
         </div>
