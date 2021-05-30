@@ -6,7 +6,7 @@ const OurTeacher = () => {
     <div className="container mt-5 mb-5">
         <div className="row">
             <div className="col-md-4 d-flex  justify-content-center align-items-center" >
-            <img src={imgPrincipal} alt="Our Principal" style={{width:"auto",margin:'auto',objectFit:'contain', maxHeight:350}}/>
+            <img className='homepage-principle-img' src='https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80' alt="Our Principal" />
             </div>
             <div className="col-md-7 principal-intro mx-3">
 					<h3>MEET OUR PRINCIPAL</h3>

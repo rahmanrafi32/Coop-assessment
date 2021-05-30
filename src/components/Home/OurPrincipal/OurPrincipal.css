@@ -28,3 +28,10 @@
   font-weight: 800;
   letter-spacing: 1px;
 }
+.homepage-principle-img{
+
+      width: -webkit-fill-available;
+    margin: auto;
+    object-fit: contain;
+    max-height: 350px;
+}
