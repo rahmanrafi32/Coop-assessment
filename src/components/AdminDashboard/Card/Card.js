@@ -38,7 +38,7 @@ const Card = () => {
                     <h3 class="card-title  ">765 <br /> <span className='text-secondary  fs-5'>MESSAGES</span></h3>
                     <p class="card-text text-success  p-3"> <FontAwesomeIcon icon={faEnvelope} /></p>
                 </div>
-                <div class="text-center text-success card-header">  <small><FontAwesomeIcon icon={faFolderOpen} /> 10 Absent Today </small> </div>
+                <div class="text-center text-success card-header">  <small><FontAwesomeIcon icon={faFolderOpen} />10 Unread messages </small> </div>
             </div>
 
         </div>

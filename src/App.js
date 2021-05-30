@@ -4,7 +4,9 @@ import AdminPage from './pages/AdminPage/AdminPage';
 function App() {
   return (
     <div >
-      <AdminPage></AdminPage>
+      
+      <AdminPage></AdminPage> 
+     
     </div>
   );
 }
