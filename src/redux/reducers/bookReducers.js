@@ -40,18 +40,21 @@ const bookReducer = (state = primaryState, action) => {
 
     case "ADD_TO_FINISHED_LIST": {
       const isAlreadyFinished = state.finishedList.find(
-        (b) => b._id === action.payload
+        (b) => b._id === action.payload._id
       );
 
       if (!isAlreadyFinished) {
         const newState = {
           ...state,
           readingList: state.readingList.filter(
-            (b) => b._id !== action.payload
+            (b) => b._id !== action.payload._id
           ),
           finishedList: [
             ...state.finishedList,
-            state.allBooks.find((b) => b._id === action.payload),
+            {
+              ...state.allBooks.find((b) => b._id === action.payload._id),
+              reader: action.payload.reader,
+            },
           ],
         };
 

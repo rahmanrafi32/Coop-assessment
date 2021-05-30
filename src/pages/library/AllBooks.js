@@ -12,7 +12,7 @@ function AllBooks() {
   console.log(allBooks);
   return (
     <PageLayout>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
         {allBooks.map((book) => (
           <BookCard key={book._id} book={book} />
         ))}

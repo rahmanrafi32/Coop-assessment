@@ -3,7 +3,6 @@ export const loadBooks = () => {
     fetch(`https://enigmatic-mesa-35453.herokuapp.com/getAllProducts`)
       .then((res) => res.json())
       .then((data) => {
-        console.log("dataaaaaaaaaaaaaaaa", data);
         dispatch({
           type: "LOAD_ALL_BOOKS",
           payload: data,

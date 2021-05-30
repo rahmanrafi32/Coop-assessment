@@ -12,7 +12,7 @@ export default function ClassSchedule() {
         <li class="list-group-item active" aria-current="true">
           Today's class schedule
         </li>
-        <li class="list-group-item">A second item</li>
+
         {data.map((data, i) => (
           <li class="list-group-item" key={i}>
             {data.courseName}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router";
 import {
   addToReadingList,
@@ -12,8 +12,9 @@ function BookCard({ book }) {
   const { _id, author_name, book_description, book_image, book_name } = book;
   const dispatch = useDispatch();
   let location = useLocation();
+  const userData = useSelector((state) => state.userData.userInfo);
   return (
-    <div class="col ">
+    <div class="col mb-3">
       <div class="card h-100 ">
         <img
           src={book_image}
@@ -34,7 +35,9 @@ function BookCard({ book }) {
               <i
                 class="bi bi-node-plus-fill fs-3 ms-5 text-success"
                 style={{ cursor: "pointer" }}
-                onClick={() => dispatch(addToReadingList(book))}
+                onClick={() =>
+                  dispatch(addToReadingList({ ...book, reader: userData }))
+                }
               ></i>{" "}
             </>
           )}
@@ -51,7 +54,9 @@ function BookCard({ book }) {
               <i
                 class="bi bi-check-circle-fill text-primary ms-4 fs-5"
                 style={{ cursor: "pointer" }}
-                onClick={() => dispatch(markAsFinished(_id))}
+                onClick={() =>
+                  dispatch(markAsFinished({ _id, reader: userData }))
+                }
               >
                 {" "}
                 Finished

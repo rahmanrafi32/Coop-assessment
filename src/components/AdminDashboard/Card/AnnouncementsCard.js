@@ -58,9 +58,8 @@ const AnnouncementsCard = () => {
             </div>
           </blockquote>
         </div>
-        <p className="mx-3">
-          <hr />
-        </p>
+        <p className="mx-3"></p>
+        <hr />
         <div class="card-body">
           <blockquote class="blockquote mb-0">
             <h5>Guest lecture on fine arts by Smith. </h5>

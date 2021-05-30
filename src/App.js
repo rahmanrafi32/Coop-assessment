@@ -10,7 +10,9 @@ import CompletedList from "./pages/library/CompletedList";
 
 import Footer from "./components/Footer/Footer";
 import MainHome from "./components/Home/MainHome/MainHome";
-
+import Login from "./pages/Login/Login";
+import Signin from "./pages/Login/Signin";
+import PrivateRoute from "./privateRoute/PrivateRoute";
 function App() {
   return (
     <div className="App">
@@ -18,13 +20,34 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={MainHome} />
-          <Route path="/teacher-dashboard" component={TeacherDashboard} />
-          <Route path="/student-dashboard" component={StudentDashboard} />
-          <Route path="/admin-dashboard" component={AdminPage} />
-          <Route path="/library/all-books" component={AllBooks} />
-          <Route path="/library/reading-list" component={ReadingList} />
-          <Route path="/library/completed-list" component={CompletedList} />
+          <PrivateRoute path="/teacher-dashboard">
+            <TeacherDashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/student-dashboard">
+            <StudentDashboard />
+          </PrivateRoute>
+          {/* <Route path="/teacher-dashboard" component={TeacherDashboard} /> */}
+          {/* <Route path="/student-dashboard" component={StudentDashboard} /> */}
+          <PrivateRoute path="/admin-dashboard">
+            {/* <Route path="/admin-dashboard" component={AdminPage} /> */}
+            <AdminPage />
+          </PrivateRoute>
+          <PrivateRoute path="/library/all-books">
+            <AllBooks />
+          </PrivateRoute>
+          {/* <Route path="/library/all-books" component={AllBooks} /> */}
+          <PrivateRoute path="/library/reading-list">
+            <ReadingList />
+          </PrivateRoute>
+          {/* <Route path="/library/reading-list" component={ReadingList} /> */}
+          <PrivateRoute path="/library/completed-list">
+            <CompletedList />
+          </PrivateRoute>
+          {/* <Route path="/library/completed-list" component={CompletedList} /> */}
+          <Route path="/login" component={Login} />
+          <Route path="/signin" component={Signin} />
         </Switch>
+
         <Footer />
       </Router>
     </div>

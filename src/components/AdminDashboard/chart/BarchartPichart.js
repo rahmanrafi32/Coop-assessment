@@ -12,52 +12,12 @@ import {
   Pie,
   Cell,
 } from "recharts";
+import { useSelector } from "react-redux";
 
 const BarchartPichart = () => {
-  const data = [
-    {
-      name: "STD 5",
-      PRESENT: 4000,
-      ABSENT: 2400,
-      LEAVE: 2400,
-    },
-    {
-      name: "STD 6",
-      PRESENT: 3000,
-      ABSENT: 1398,
-      LEAVE: 2210,
-    },
-    {
-      name: "STD 7",
-      PRESENT: 2000,
-      ABSENT: 9800,
-      LEAVE: 2290,
-    },
-    {
-      name: "STD 8",
-      PRESENT: 2780,
-      ABSENT: 3908,
-      LEAVE: 2000,
-    },
-    {
-      name: "STD 9",
-      PRESENT: 1890,
-      ABSENT: 4800,
-      LEAVE: 2181,
-    },
-    {
-      name: "STD 10",
-      PRESENT: 2390,
-      ABSENT: 3800,
-      LEAVE: 2500,
-    },
-    {
-      name: "STD 11",
-      PRESENT: 3490,
-      ABSENT: 4300,
-      LEAVE: 2100,
-    },
-  ];
+  const data = useSelector(
+    (state) => state?.adminDashboardData?.studentAttendenceData
+  );
 
   const data2 = [
     { name: "ABSENT", value: 17 },
