@@ -1,10 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDOfrXr06zhF5-GPkZeSMqznphHpJiNsCE",
-  authDomain: "university-management-8232.firebaseapp.com",
-  projectId: "university-management-8232",
-  storageBucket: "university-management-8232.appspot.com",
-  messagingSenderId: "551705644722",
-  appId: "1:551705644722:web:226a99bf97ed527b1b03ab"
+  apiKey: "AIzaSyBvQnk3dDn19tpovbRqHrpqZIMHi0XLjvg",
+  authDomain: "unimanagement-cfb8e.firebaseapp.com",
+  projectId: "unimanagement-cfb8e",
+  storageBucket: "unimanagement-cfb8e.appspot.com",
+  messagingSenderId: "828216319149",
+  appId: "1:828216319149:web:4eec5c2435babba5953a24"
 };
-
 export default firebaseConfig;
