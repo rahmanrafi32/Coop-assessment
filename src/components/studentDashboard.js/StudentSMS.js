@@ -1,10 +1,10 @@
-import React from "react";
-import AnnouncementsCard from "../AdminDashboard/Card/AnnouncementsCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarAlt,
-  faMapMarkerAlt,
+  faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import AnnouncementsCard from "../AdminDashboard/Card/AnnouncementsCard";
 
 const StudentSMS = () => {
   return (
@@ -14,12 +14,12 @@ const StudentSMS = () => {
       </div>
 
       <div className="col-md-4 d-flex justify-content-center mb-4">
-        <ul class="list-group" style={{ maxWidth: "20rem", border: "none" }}>
-          <li class="list-group-item py-3 text-secondary fw-bold ">
+        <ul className="list-group" style={{ maxWidth: "20rem", border: "none" }}>
+          <li className="list-group-item py-3 text-secondary fw-bold ">
             {" "}
             <FontAwesomeIcon icon={faCalendarAlt} /> TOMORROW'S TIMETABLE
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">10 am</small>
@@ -33,7 +33,7 @@ const StudentSMS = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">11 am</small>
@@ -47,7 +47,7 @@ const StudentSMS = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">11 am</small>
@@ -61,7 +61,7 @@ const StudentSMS = () => {
               </small>{" "}
             </p>
           </li>
-          <li class="list-group-item py-3 d-flex">
+          <li className="list-group-item py-3 d-flex">
             <p className="rounded-circle bg-danger mx-3 fs-5 py-3 text-white">
               {" "}
               <small className="p-2">12 pm</small>
