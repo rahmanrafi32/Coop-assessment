@@ -1,0 +1,72 @@
+.main {
+  background-color: #27ae60;
+}
+.apply-know-row {
+  background: #27ae60;
+  padding: 60px 0;
+  color: #fff;
+}
+.apply-know-row .admission-row a {
+  font-size: 14px;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: #27ae60;
+  background: #fff;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.input-wrapper a {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+.info-row {
+  border-left: 1px solid #fff;
+}
+
+.info-row,
+.admission-row {
+  padding: 0 30px;
+}
+.info-row input {
+  width: 80%;
+}
+.input-wrapper input {
+  border: none;
+  padding: 15px;
+  color: #07253f;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  line-height: normal;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
