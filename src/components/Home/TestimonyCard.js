@@ -1,13 +1,13 @@
+import { faClock, faGraduationCap, faStar, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faGraduationCap, faStar, faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 const TestimonyCard = () => {
     return (
         <div className=' mt-5 row d-flex justify-content-center'>
-            <div className="col-md-6 px-4 text-white">
+            <div className="col-md-6 px-4 text-white pt-5">
                 <p className='text-white'> <span style={{ fontSize: '60px' }}><FontAwesomeIcon icon={faTrophy} /></span>  <br /> PATHSHALA won best School award in 2021 </p>
-                <h1 className='fw-bold text-white'>WINNER BEST SCHOOL AWARD</h1>
+                <h1 className='fw-bold text-white'>WINNER BEST UNI AWARD</h1>
                 <p className='px-5 mx-4'>It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the content.</p>
             </div>
 
